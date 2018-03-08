@@ -128,7 +128,7 @@ public class Formulario extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         
-        Pattern dni =Pattern.compile("[0-9]{4}[0-9]*{4}[A-Z]");
+        Pattern dni =Pattern.compile("[0-9]{4,8}[A-Z]");
         Matcher m1=dni.matcher(jTextFieldDni.getText());
         Pattern nombre =Pattern.compile("[A-Z a-z]+");
         Matcher m2=nombre.matcher(jTextFieldNombre.getText());
